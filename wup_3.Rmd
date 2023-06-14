@@ -26,6 +26,17 @@ mutate(across(where(is.character), as.factor))
 ## Now with ggplot - first select the basic data
 
 ```{r}
+library(ggplot2)
+
+# Create the notched box plot with red outliers
+ggplot(davisdata, aes(x = Seat, y = alcohol)) +
+  geom_boxplot(notch = TRUE, outlier.colour = "red") +
+  labs(title = "Notched Box plot by Seat") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+
+```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
 ## Now add in boxplot
