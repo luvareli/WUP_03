@@ -83,14 +83,8 @@ print(tukey_result)
 ```
 ```
 
-
-
-```{r}
-
-
-
 ## Conclusions
 
-
+The box plots display the distribution of alcohol consumption across different seating positions. The ANOVA test indicates a significant difference in alcohol consumption based on seating position (p < 0.05). The Tukey's HSD test identifies specific pairs of seating positions that exhibit significant differences in alcohol consumption. These findings suggest that seating position may influence alcohol consumption levels. However, it's important to consider other factors that could contribute to these differences.
 
 
